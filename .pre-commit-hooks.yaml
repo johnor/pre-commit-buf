@@ -1,0 +1,15 @@
+---
+- id: buf-lint
+  name: buf-lint
+  description: Lint protobuf files with buf
+  entry: buf-wrapper.sh lint
+  types_or: ["yaml", "proto"]
+  pass_filenames: false
+  language: script
+- id: buf-breaking-master
+  name: buf-breaking-master
+  description: Detect breaking changes against master
+  entry: buf-wrapper.sh breaking --against .git#branch=master
+  types_or: ["yaml", "proto"]
+  pass_filenames: false
+  language: script
