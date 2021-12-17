@@ -24,6 +24,12 @@ Add this to your `.pre-commit-config.yaml`:
 
 Run buf lint on proto files.
 
+### `buf-breaking`
+
+Run buf breaking on proto files. Add `args: ["--agsinst", BRANCH]` where BRANCH
+could for example be `".git#branch=origin/master"` to your
+.pre-commit-config.yaml file.
+
 ### `buf-breaking-master`
 
 Run buf breaking on proto files against the master branch.

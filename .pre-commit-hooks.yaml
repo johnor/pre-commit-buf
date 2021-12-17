@@ -6,6 +6,13 @@
   types_or: ["yaml", "proto"]
   pass_filenames: false
   language: script
+- id: buf-breaking
+  name: buf-breaking
+  description: Detect breaking changes
+  entry: buf-wrapper.sh breaking
+  types_or: ["yaml", "proto"]
+  pass_filenames: false
+  language: script
 - id: buf-breaking-master
   name: buf-breaking-master
   description: Detect breaking changes against master
