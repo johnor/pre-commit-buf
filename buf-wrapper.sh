@@ -2,8 +2,8 @@
 
 set -euo pipefail
 
-readonly VERSION=v1.2.1
-readonly LINUX_X86_64_SHA=8dcf89e66e645300de5dfdba31c11aafb3d34257903a3a9f5a565060b43163c8
+readonly VERSION=v1.3.1
+readonly LINUX_X86_64_SHA=64d2999541eb1185447a8c49dc2226bf59ebbe511adc5e195927fa48773e7b9c
 
 readonly OS=Linux
 readonly ARCH=x86_64
