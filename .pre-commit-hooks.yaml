@@ -6,6 +6,13 @@
   types_or: ["yaml", "proto"]
   pass_filenames: false
   language: script
+- id: buf-format
+  name: buf-format
+  description: Format protobuf files with buf
+  entry: buf-wrapper.sh format --exit-code --write
+  types: ["proto"]
+  pass_filenames: false
+  language: script
 - id: buf-breaking
   name: buf-breaking
   description: Detect breaking changes

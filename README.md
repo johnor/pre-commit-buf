@@ -24,6 +24,12 @@ Add this to your `.pre-commit-config.yaml`:
 
 Run buf lint on proto files.
 
+### `buf-lint`
+
+_New in v1.3.1_
+
+Run buf format on proto files.
+
 ### `buf-breaking`
 
 Run buf breaking on proto files. Add `args: ["--agsinst", BRANCH]` where BRANCH
