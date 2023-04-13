@@ -33,7 +33,7 @@ if echo "$LINUX_X86_64_SHA  $TMP_BINARY" | shasum --check --status; then
 
    exec "$BINARY" "$@"
 else
-   echo "error: buf sha mismatch" >&2
+   echo "error: buf sha mismatch; $(shasum -a 256 "$TMP_BINARY")" >&2
    rm -f "$BINARY"
    exit 1
 fi
