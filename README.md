@@ -24,7 +24,7 @@ Add this to your `.pre-commit-config.yaml`:
 
 Run buf lint on proto files.
 
-### `buf-lint`
+### `buf-format`
 
 _New in v1.3.1_
 
